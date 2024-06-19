@@ -177,7 +177,7 @@ h1 {
 }
 ```
 **Hasil**
-![gambar](ASET/elemen.png)
+![gambar](Aset/elemen.png)
 
 ## Class Selector
 ### Penjelasan
@@ -214,7 +214,7 @@ h1 {
 }
 ```
 ### Hasil
-![gambar](ASET/class.png)
+![gambar](Aset/class.png)
 ## ID Selector
 **Penjelasan**
 - `<!DOCTYPE html>`: Mendefinisikan tipe dokumen sebagai HTML versi 5. 
@@ -247,7 +247,7 @@ h1 {
 }
 ```
 **Hasil**
-![gambar](ASET/selector.png)
+![gambar](Aset/selector.png)
 
 
 # TEXT
@@ -336,9 +336,9 @@ text-align: center;
 ```
 ### HASIL
 #### BEFORE
-![gambar](ASET/after5.png)
+![gambar](Aset/after5.png)
 #### AFTER
-![gambar](ASET/before5.png)
+![gambar](Aset/before5.png)
 ### KESIMPULAN
 dari kode program yang diberikan p { text-align: center; } adalah bahwa kode ini mengatur properti CSS text-align untuk elemen `<p>` (paragraf) dalam sebuah dokumen HTML. Dengan nilai center, semua teks dalam elemen `<p>` akan diatur ke tengah dari elemen tersebut.
 ## Text transform
@@ -356,9 +356,9 @@ text-transform: lowercase;
 ```
 ### HASIL
 #### BEFORE
-![gambar](ASET/after5.png)
+![gambar](Aset/after5.png)
 #### AFTER
-![gambar](ASET/after6.png)
+![gambar](Aset/after6.png)
 
 ### KESIMPULAN
 Kesimpulan dari text-transform: uppercase; adalah bahwa teks yang diberi gaya dengan properti ini akan diubah menjadi huruf kapital semua.
@@ -374,10 +374,10 @@ text-indent: 100px;
 
 ### HASIL
 #### BEFORE
-![gambar](ASET/after5.png)
+![gambar](Aset/after5.png)
 
 #### AFTER
-![gambar](ASET/after7.png)
+![gambar](Aset/after7.png)
 ### KESIMPULAN
 Kesimpulan dari penggunaan properti CSS text-indent: 100px; adalah bahwa paragraf (elemen `<p>`) akan memiliki indentasi teks sebesar 100 piksel dari sisi kiri. ini digunakan untuk mengatur jarak atau spasi antara tepi kiri elemen paragraf dan teks di dalamnya.
 
