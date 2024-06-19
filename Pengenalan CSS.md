@@ -851,10 +851,10 @@ column ke bawah*/
 }
 ```
 ### Hasil 
-**BEFORE**
+#### BEFORE
 ![gambar](Aset/before3.png)
 
-**AFTER**
+#### AFTER
 ![gambar](Aset/relative.png)
 
 ### Kesimpulan
@@ -876,9 +876,9 @@ elemen dengan kelas "box-1" mengatur latar belakang menjadi warna aqua dan mengg
 }
 ```
 ### Hasil 
-**BEFORE**
+#### BEFORE
 ![gambar](Aset/before3.png)
-**AFTER**
+#### AFTER
 ![gambar](Aset/absolute.png)
 
 ### Kesimpulan
@@ -900,10 +900,10 @@ kelas "box-2" menetapkan latar belakangnya menjadi warna ungu (purple) dan menga
 }
 ```
 ### Hasil 
-**BEFORE**
+#### BEFORE
 ![gambar](Aset/before3.png)
 
-**AFTER**
+#### AFTER
 ![gambar](Aset/fixed.png)
 
 ### Kesimpulan
@@ -925,10 +925,10 @@ position: fixed, elemen akan tetap berada pada posisinya yang ditentukan jika di
 }
 ```
 ### Hasil 
-**BEFORE**
+#### BEFORE
 ![gambar](Aset/before3.png)
 
-**AFTER**
+#### AFTER
 ![gambar](Aset/sticky.png)
 
 ### Kesimpulan
