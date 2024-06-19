@@ -165,9 +165,9 @@ p{
 
 # SELECTOR CSS
 ## Elemen Selector 
-**Penjelasan**
+### Penjelasan
 `h1`: Ini adalah elemen selector yang menargetkan semua elemen `<h1>` dalam dokumen HTML untuk menerapkan aturan gaya tertentu, seperti warna teks biru dan margin atas sebesar 10000 piksel.
-**Code**
+### Code
 ```HTML
 <h1>Halo RPL 1</h1>
 ```
@@ -176,7 +176,7 @@ h1 {
     color: blue;
 }
 ```
-**Hasil**
+### Hasil
 ![gambar](Aset/elemen.png)
 
 ## Class Selector
@@ -216,7 +216,7 @@ h1 {
 ### Hasil
 ![gambar](Aset/class.png)
 ## ID Selector
-**Penjelasan**
+### Penjelasan
 - `<!DOCTYPE html>`: Mendefinisikan tipe dokumen sebagai HTML versi 5. 
 - `<html>`: Menandakan awal dan akhir dari dokumen HTML.
 - `<head>`: Berisi informasi tambahan tentang dokumen HTML, seperti judul dan tautan ke file CSS.    
@@ -224,7 +224,7 @@ h1 {
 - `<link rel="stylesheet" href="Style.CSS">`: Menautkan dokumen HTML dengan file CSS eksternal bernama "Style.CSS", sehingga dokumen HTML dapat menerapkan gaya yang didefinisikan dalam file CSS tersebut.
 - `<body>`: Berisi konten yang akan ditampilkan kepada pengguna.  
 - Elemen `<p id="hijau"> ini warna hijau </p>` memiliki atribut `id` yang menentukan identitas uniknya dalam dokumen HTML. Dengan demikian, fungsi dari atribut `id` ini adalah untuk memberikan cara yang unik untuk merujuk atau menargetkan elemen tersebut dalam CSS. Dan memberikan warna hijau pada teks. 
-**Code**
+### Code
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -246,7 +246,7 @@ h1 {
     color:green;
 }
 ```
-**Hasil**
+### Hasil
 ![gambar](Aset/selector.png)
 
 
@@ -459,10 +459,10 @@ background-attachment: fixed;
 ```
 ### Hasil
 
-![gambar](ASET/before1.png)
+![gambar](Aset/before1.png)
 
 
-![gambar](ASET/after1.png)
+![gambar](Aset/after1.png)
 
 ### Kesimpulan
 Kode CSS di atas, body { background-attachment: fixed; }, menetapkan bahwa gambar latar belakang pada halaman HTML akan memiliki sifat tetap (fixed). Ini berarti gambar latar belakang akan tetap pada posisinya relatif terhadap jendela browser, dan tidak akan bergerak saat halaman digulir.
@@ -489,7 +489,7 @@ padding adalah sebuah properti CSS yang digunakan untuk menentukan jarak antara 
    padding-top: 50px;
 ```
 ### Hasil
-![gambar](ASET/padding.png)
+![gambar](Aset/padding.png)
 
 
 ### Kesimpulan 
@@ -516,7 +516,7 @@ margin adalah properti CSS yang digunakan untuk menentukan jarak antara elemen d
 }
 ```
 ### Hasil
-![gambar](ASET/margin.png)
+![gambar](Aset/margin.png)
 
 ### Kesimpulan 
 margin adalah properti singkatan untuk mengatur margin elemen di empat arah atas, kanan, bawah, dan kiri.
@@ -536,7 +536,7 @@ button {
 }
 ```
 ### Hasil
-![gambar](ASET/border.png)
+![gambar](Aset/border.png)
 ### Kesimpulan
 1. `border-width` mengatur lebar garis. Contoh nilai yang dapat digunakan adalah `thin`, `medium`, `thick`, atau nilai numerik dalam piksel (`px`), sentimeter (`cm`), atau unit lainnya.
 2. `border-style` mengatur gaya garis. Beberapa nilai yang umum digunakan adalah `solid` (garis solid), `dashed` (garis putus-putus), `dotted` (garis titik-titik), `double` (garis ganda), dll.
@@ -618,7 +618,7 @@ button {
 }
 ```
 ## Hasil
-![gambar](ASET/boxmodel.png)
+![gambar](Aset/boxmodel.png)
 
 
 # PSEUDO-CLASS
@@ -658,8 +658,8 @@ button:active {
 }
 ```
 ## Hasil
-![gambar](ASET/before.png)
-![gambar](ASET/after.png)
+![gambar](Aset/before.png)
+![gambar](Aset/after.png)
 
 ## Kesimpulan
 Setiap property memberikan perubahan yang berbeda, dan hover akan memberikan perubahan saat di klik, width untuk mengatur lebar, background-color purple memberikan warna ungu ketika diklik, dan color white digunakan untuk memberikan warna putih pada teks. 
@@ -678,8 +678,8 @@ button:hover{
   }
 ```
 ## Hasil
-![gambar](ASET/before4.png)
-![gambar](ASET/after4.png)
+![gambar](Aset/before4.png)
+![gambar](Aset/after4.png)
 
 
 ## Kesimpulan
@@ -701,9 +701,9 @@ button:active {
 ```
 ### Hasil
 #### Before
-![gambar](ASET/before.png)
+![gambar](Aset/before.png)
 #### After
-![gambar](ASET/after.png)
+![gambar](Aset/after.png)
 
 
 ### Kesimpulan
@@ -831,7 +831,7 @@ column ke bawah*/
 }
 ```
 ### Hasil
-![gambar](ASET/flexbox.png)
+![gambar](Aset/flexbox.png)
 
 
 # POSITION
@@ -852,10 +852,10 @@ column ke bawah*/
 ```
 ### Hasil 
 **BEFORE**
-![gambar](ASET/before3.png)
+![gambar](Aset/before3.png)
 
 **AFTER**
-![gambar](ASET/relative.png)
+![gambar](Aset/relative.png)
 
 ### Kesimpulan
 elemen dengan kelas "box-1" mengatur latar belakang menjadi warna aqua dan menggeser elemen 20 piksel ke bawah dan 10 piksel ke kanan dari posisi defaultnya.
@@ -877,9 +877,9 @@ elemen dengan kelas "box-1" mengatur latar belakang menjadi warna aqua dan mengg
 ```
 ### Hasil 
 **BEFORE**
-![gambar](ASET/before3.png)
+![gambar](Aset/before3.png)
 **AFTER**
-![gambar](ASET/absolute.png)
+![gambar](Aset/absolute.png)
 
 ### Kesimpulan
 kelas "box-2" menetapkan latar belakangnya menjadi warna ungu (purple) dan mengatur posisinya secara absolut,dimana elemen digeser 15 piksel dari atas dan 150 piksel dari kiri.
@@ -901,10 +901,10 @@ kelas "box-2" menetapkan latar belakangnya menjadi warna ungu (purple) dan menga
 ```
 ### Hasil 
 **BEFORE**
-![gambar](ASET/before3.png)
+![gambar](Aset/before3.png)
 
 **AFTER**
-![gambar](ASET/fixed.png)
+![gambar](Aset/fixed.png)
 
 ### Kesimpulan
 position: fixed, elemen akan tetap berada pada posisinya yang ditentukan jika discroll.  Properti top dan left digunakan untuk menentukan jarak elemen dari tepi atas dan kiri. 
@@ -926,10 +926,10 @@ position: fixed, elemen akan tetap berada pada posisinya yang ditentukan jika di
 ```
 ### Hasil 
 **BEFORE**
-![gambar](ASET/before3.png)
+![gambar](Aset/before3.png)
 
 **AFTER**
-![gambar](ASET/sticky.png)
+![gambar](Aset/sticky.png)
 
 ### Kesimpulan
 `position: sticky`, elemen akan seperti posisi relatif sampai jarak scroll mencapai nilai tertentu. elemen akan tetap berada pada posisi yang telah ditentukan saat jarak scroll mencapai nilai tertentu, sambil tetap mengikuti pergeseran scroll di bawahnya.
@@ -1014,7 +1014,7 @@ button:hover {
 }
 ```
 ## Hasil
-![gambar](ASET/boxmodel.png)
+![gambar](Aset/boxmodel.png)
 
 ## Kesimpulan
 - Teks besar dan miring : Ukuran font 75px dan gaya font italic membuat teks paragraf menonjol dan terlihat formal.
@@ -1094,8 +1094,8 @@ button:hover {
 }
 ```
 ## Hasil
-![gambar](ASET/before8.png)
-![gambar](ASET/after8.png)
+![gambar](Aset/before8.png)
+![gambar](Aset/after8.png)
 
 ## Kesimpulan
 Latar belakang body akan memiliki warna RGB (248, 210, 163) yang merupakan kombinasi dari merah, hijau, dan biru.
@@ -1186,7 +1186,7 @@ button:hover {
 tolong berikan kesimpulannya
 ```
 ## Hasil
-![gambar](ASET/flex-box.png)
+![gambar](Aset/flex-box.png)
 
 ## Kesimpulan
 - Terdapat sebuah `<div>` dengan kelas "container" yang berperan sebagai wadah utama.
@@ -1315,7 +1315,7 @@ tolong berikan kesimpulannya
 }
 ```
 ## Hasil
-![gambar](ASET/position.png)
+![gambar](Aset/position.png)
 ## Kesimpulan
 - Kontainer tersebut memiliki posisi statis dan akan mengisi lebar penuh dari elemen induknya.
 - Tinggi kontainer ditetapkan pada 580 piksel, dengan latar belakang berwarna RGBA (122, 122, 247, 0.628).
