@@ -937,30 +937,36 @@ position: fixed, elemen akan tetap berada pada posisinya yang ditentukan jika di
 
 # Tantangan Box-model
 ## Penjelasan 
-1. p { ... }: Ini adalah pemilih elemen yang mengatur tata letak dan gaya teks pada halaman web. Dalam kode ini, properti dan nilai yang digunakan adalah :
-- f`ont-size: 75px;` -> Mengatur ukuran font menjadi 75 piksel.
-- font-family: 'arial'; -> Mengatur jenis font menjadi Arial.
-- margin-top: 150px; -> Mengatur jarak antara teks dan elemen di atasnya menjadi 150 piksel.
-- margin-bottom: 100px; -> Mengatur jarak antara teks dan elemen di bawahnya menjadi 100 piksel.
-- margin-left: 50px; -> Mengatur jarak antara teks dan elemen di sebelah kiri menjadi 50 piksel.
-- margin-right: 100px; -> Mengatur jarak antara teks dan elemen di sebelah kanan menjadi 100 piksel.
-- color: aliceblue; -> Mengatur warna teks menjadi aliceblue.
+1. `body { ... }`
+- **`background-color: plum;`**: Mengatur warna latar belakang halaman web menjadi warna plum.
 
-2. img { ... }: Ini adalah pemilih elemen gambar pada halaman web. Dalam kode ini, properti dan nilai yang digunakan adalah:
-- margin-right: 200px; -> Mengatur jarak antara gambar dan elemen di sebelah kanan menjadi 200 piksel.
-- margin-top: -30px; -> Mengatur jarak antara gambar dan elemen di atasnya menjadi -30 piksel (agar gambar terlihat lebih bawah).
-- border: 10px solid white; -> Mengatur border gamb  ar menjadi 10 piksel dengan warna putih.
-- border-radius: 1500px 1500px; -> Mengatur sudut pada border gambar menjadi bulat.
-  
-3. button { ... }: Ini adalah pemilih elemen tombol pada halaman web. Dalam kode ini, properti dan nilai yang digunakan adalah:
-- background-color: purple; -> Mengatur warna latar belakang tombol menjadi ungu.
-- width: 150px; -> Mengatur lebar tombol menjadi 150 piksel.
-- height: 50px; -> Mengatur tinggi tombol menjadi 50 piksel.
-- border-width: 2px; -> Mengatur lebar border tombol menjadi 2 piksel.    
-- color: orange; -> Mengatur warna teks tombol menjadi orange.
-- border-color: orange; -> Mengatur warna border tombol menjadi orange.    
-- margin-bottom: 20px; -> Mengatur jarak antara tombol dan elemen di bawahnya menjadi 20 piksel.
-- margin-left: 390px; -> Mengatur jarak antara tombol dan elemen di sebelah kiri menjadi 390 piksel
+2. `p { ... }`
+- **`font-size: 75px;`**: Mengatur ukuran font untuk paragraf (`<p>`) menjadi 75px.
+- **`font-family: 'arial';`**: Mengatur jenis font untuk paragraf menjadi "arial".
+- **`margin-top: 150px;`**: Mengatur margin atas paragraf menjadi 150px.
+- **`margin-bottom: 100px;`**: Mengatur margin bawah paragraf menjadi 100px.
+- **`margin-left: 50px;`**: Mengatur margin kiri paragraf menjadi 50px.
+- **`margin-right: 100px;`**: Mengatur margin kanan paragraf menjadi 100px.
+- **`color: rgb(171, 210, 244);`**: Mengatur warna font paragraf menjadi biru muda (`rgb(171, 210, 244)`).
+
+3. `img { ... }`
+- **`margin-right: 200px;`**: Mengatur margin kanan gambar (`<img>`) menjadi 200px.
+- **`margin-top: -30px;`**: Mengatur margin atas gambar menjadi -30px (negatif, artinya margin ini akan "menarik" gambar ke atas).
+- **`border: 10px solid white;`**: Mengatur border gambar menjadi 10px tebal, berwarna putih, dan dengan jenis garis solid.
+- **`border-radius: 1500px 1500px;`**: Mengatur bentuk border gambar menjadi bulat dengan radius 1500px (menghasilkan bentuk lingkaran).
+
+4. `button { ... }`
+- **`background-color: purple;`**: Mengatur warna latar belakang tombol menjadi ungu (`purple`).
+- **`width: 150px;`**: Mengatur lebar tombol menjadi 150px.
+- **`height: 50px;`**: Mengatur tinggi tombol menjadi 50px.
+- **`border-width: 2px;`**: Mengatur lebar border tombol menjadi 2px.
+- **`color: orange;`**: Mengatur warna font tombol menjadi orange.
+- **`border-color: orange;`**: Mengatur warna border tombol menjadi orange.
+- **`margin-bottom: 20px;`**: Mengatur margin bawah tombol menjadi 20px.
+- **`margin-left: 400px;`**: Mengatur margin kiri tombol menjadi 400px.
+
+5. `button:hover { ... }`
+- **`background-color: blueviolet;`**: Mengatur warna latar belakang tombol menjadi ungu kebiruan (`blueviolet`) ketika mouse di atas tombol.
 ## Kode Program
 ```html
 <!DOCTYPE html>
@@ -1017,19 +1023,48 @@ button:hover {
 ![gambar](Aset/boxmodel.png)
 
 ## Kesimpulan
-- Teks besar dan miring : Ukuran font 75px dan gaya font italic membuat teks paragraf menonjol dan terlihat formal.
-- Font klasik : Penggunaan font 'times new roman' memberikan kesan klasik dan elegan.
-- Margin besar : Margin atas 150px, bawah 100px, kiri 50px, dan kanan 100px memberikan jarak yang besar antara paragraf dan elemen lainnya.
-- Warna biru pastel : Warna aliceblue memberikan kesan lembut dan dingin pada teks.
-
+Kode di atas menghasilkan halaman web sederhana dengan latar belakang plum, sebuah gambar bulat dengan border putih di sebelah kanan, dan sebuah tombol ungu dengan teks "klik saya" di sebelah kiri. Teks "Selamat Datang" dan "di web Alya !" ditampilkan dalam paragraf dengan font besar dan warna biru muda. Ketika mouse di atas tombol, tombol akan berubah menjadi ungu kebiruan.
 # Tantangan Transition
 ## Penjelasan 
-body: Ini adalah selektor untuk elemen ``<body>. Aturan CSS ini mengatur tampilan latar belakang body dengan background-color: rgb(248, 210, 163) yang menghasilkan warna latar belakang berdasarkan nilai RGB (merah 248, hijau 210, biru 163). Properti width: 100% mengatur lebar body menjadi 100% dari lebar viewport.
-2. .container: Ini adalah selektor untuk elemen dengan kelas "container". Aturan CSS ini mengatur tampilan elemen-elemen dengan kelas "container". Properti display: contents mengubah perilaku elemen ini sehingga kontennya dianggap sebagai konten langsung dari elemen induknya. Properti align-items: flex-end mengatur posisi vertikal elemen-elemen dalam container menjadi di bagian bawah. Properti flex-direction: row mengatur arah tata letak elemen-elemen menjadi baris. Properti justify-content: space-around mengatur ruang kosong yang merata di sekitar elemen-elemen dalam container.
-3. .box-2: Ini adalah selektor untuk elemen dengan kelas "box-2". Aturan CSS ini mengatur tampilan elemen dengan kelas "box-2". Properti font-size: 75px mengatur ukuran font menjadi 75 piksel. Properti font-family: 'arial' mengatur jenis font menjadi Arial. Properti margin-top: 150px mengatur jarak atas elemen dari elemen sebelumnya sebesar 150 piksel. Properti margin-bottom: 100px mengatur jarak bawah elemen sebesar 100 piksel. Properti margin-left: 50px mengatur jarak kiri elemen sebesar 50 piksel. Properti margin-right: 100px mengatur jarak kanan elemen sebesar 100 piksel. Properti color: rgb(104, 104, 104) mengatur warna teks menjadi nilai RGB (merah 104, hijau 104, biru 104).
-4. .box-1: Ini adalah selektor untuk elemen dengan kelas "box-1". Aturan CSS ini mengatur tampilan elemen dengan kelas "box-1". Properti margin-right: 200px mengatur jarak kanan elemen sebesar 200 piksel. Properti margin-top: -30px mengatur jarak atas elemen menjadi -30 piksel, yang akan menggeser elemen ke atas. Properti border: 10px solid white mengatur tampilan border elemen dengan ketebalan 10 piksel, jenis solid, dan warna putih. Properti border-radius: 1500px 1500px mengatur radius lengkungan border elemen menjadi 1500 piksel pada kedua sudutnya.
-5. button: Ini adalah selektor untuk elemen `<button>`. Aturan CSS ini mengatur tampilan tombol. Properti background-color: lightblue mengatur warna latar belakang tombol menjadi lightblue. Properti width: 150px dan height: 50px mengatur lebar dan tinggi tombol masing-masing menjadi 150 piksel dan 50 piksel. Properti border-width: 2px mengatur ketebalan border tombol menjadi 2 piksel. Properti color: rgb(138, 138, 229) mengatur warna teks tombol menjadi nilai RGB (merah 138, hijau 138, biru 229). Properti border-color: rgba(73, 134, 240, 0.29) mengatur warna border tombol menggunakan nilai RGBA (merah 73, hijau 134, biru 240, transparansi 0,29). Properti margin-bottom: 20px mengatur jarak bawah tombol sebesar 20 piksel. Properti margin-left: 400px mengatur jarak kiri tombol sebesar 400 piksel.
-6. button:hover: Ini adalah selektor untuk tombol saat dihover (mengarahkan kursor ke tombol). Aturan CSS ini mengatur tampilan tombol saat dihover. Properti background-color: lightcyan mengatur warna latar belakang
+1. `body { ... }`
+- **`background-color: rgb(248, 210, 163);`**: Mengatur warna latar belakang halaman web menjadi warna peach (`rgb(248, 210, 163)`).
+- **`width: 100%;`**: Mengatur lebar halaman web menjadi 100% dari lebar jendela browser.
+
+2. `.container { ... }`
+- **`display: contents;`**: Mengatur agar elemen `container` tidak menampilkan sendiri sebagai kotak, tetapi hanya menampilkan konten di dalamnya.
+- **`align-items: flex-end;`**: Mengatur agar item-item di dalam `container` sejajar ke bagian bawah.
+- **`flex-direction: row;`**: Mengatur agar item-item di dalam `container` disusun secara horizontal (dari kiri ke kanan).
+- **`justify-content: space-around;`**: Mengatur agar item-item di dalam `container` memiliki jarak yang sama di antara mereka, dengan jarak yang lebih besar di tepi kiri dan kanan.
+
+3. `.box-2 { ... }`
+- **`font-size: 75px;`**: Mengatur ukuran font untuk elemen dengan kelas `box-2` menjadi 75px.
+- **`font-family: 'arial';`**: Mengatur jenis font untuk elemen dengan kelas `box-2` menjadi "arial".
+- **`margin-top: 150px;`**: Mengatur margin atas elemen dengan kelas `box-2` menjadi 150px.
+- **`margin-bottom: 100px;`**: Mengatur margin bawah elemen dengan kelas `box-2` menjadi 100px.
+- **`margin-left: 50px;`**: Mengatur margin kiri elemen dengan kelas `box-2` menjadi 50px.
+- **`margin-right: 100px;`**: Mengatur margin kanan elemen dengan kelas `box-2` menjadi 100px.
+- **`color: rgb(104, 104, 104);`**: Mengatur warna font untuk elemen dengan kelas `box-2` menjadi abu-abu (`rgb(104, 104, 104)`).
+
+4. `.box-1 { ... }`
+- **`margin-right: 200px;`**: Mengatur margin kanan elemen dengan kelas `box-1` menjadi 200px.
+- **`margin-top: -30px;`**: Mengatur margin atas elemen dengan kelas `box-1` menjadi -30px (negatif, artinya margin ini akan "menarik" elemen ke atas).
+- **`border: 10px solid white;`**: Mengatur border elemen dengan kelas `box-1` menjadi 10px tebal, berwarna putih, dan dengan jenis garis solid.
+- **`border-radius: 1500px 1500px;`**: Mengatur bentuk border elemen dengan kelas `box-1` menjadi bulat dengan radius 1500px (menghasilkan bentuk lingkaran).
+
+5. `button { ... }`
+- **`background-color: lightblue;`**: Mengatur warna latar belakang tombol menjadi biru muda (`lightblue`).
+- **`width: 150px;`**: Mengatur lebar tombol menjadi 150px.
+- **`height: 50px;`**: Mengatur tinggi tombol menjadi 50px.
+- **`border-width: 2px;`**: Mengatur lebar border tombol menjadi 2px.
+- **`color: rgb(138, 138, 229);`**: Mengatur warna font tombol menjadi biru muda (`rgb(138, 138, 229)`).
+- **`border-color: rgba(73, 134, 240, 0.29);`**: Mengatur warna border tombol menjadi biru muda transparan (`rgba(73, 134, 240, 0.29)`).
+- **`margin-bottom: 20px;`**: Mengatur margin bawah tombol menjadi 20px.
+- **`margin-left: 400px;`**: Mengatur margin kiri tombol menjadi 400px.
+
+6. `button:hover { ... }`
+- **`background-color: lightcyan;`**: Mengatur warna latar belakang tombol menjadi biru muda lebih terang (`lightcyan`) ketika mouse di atas tombol.
+- **`font-weight: bolder;`**: Mengatur font tombol menjadi lebih tebal ketika mouse di atas tombol.
+- **`transition: all 0.3s ease-in;`**: Mengatur efek transisi untuk semua properti tombol ketika mouse di atas tombol, dengan durasi 0.3 detik dan efek transisi "ease-in" (percepatan di awal transisi). 
 ## Kode Program
 ```html
 <!DOCTYPE html>
@@ -1098,17 +1133,10 @@ button:hover {
 ![gambar](Aset/after8.png)
 
 ## Kesimpulan
-Latar belakang body akan memiliki warna RGB (248, 210, 163) yang merupakan kombinasi dari merah, hijau, dan biru.
-Lebar body akan setara dengan 100% lebar viewport (area tampilan browser).
-Elemen dengan kelas "container" akan memiliki tata letak kontennya yang diatur secara fleksibel, dengan elemen-elemen yang diatur dalam baris.
-Konten dalam elemen dengan kelas "container" akan diatur agar berada di bagian bawah (align-items: flex-end) dan memiliki ruang kosong merata di sekitarnya (justify-content: space-around).
-Elemen dengan kelas "box-2" akan memiliki ukuran font 75 piksel, menggunakan jenis` font Arial`, dan memiliki margin atas, bawah, kiri, dan kanan yang masing-masing telah ditentukan.
-Elemen dengan kelas "box-1" akan memiliki margin kanan 200 piksel, margin atas -30 piksel (mendorong elemen ke atas), border dengan ketebalan 10 piksel, dan radius lengkungan border sebesar 1500 piksel pada sudut-sudutnya.
-Tombol akan memiliki latar belakang warna lightblue, lebar 150 piksel, tinggi 50 piksel, ketebalan border 2 piksel, warna teks RGB (138, 138, 229), warna border RGBA (73, 134, 240, 0.29), dan margin bawah dan kiri yang telah ditentukan.
-Saat tombol dihover, latar belakangnya akan berubah menjadi lightcyan, teksnya akan menjadi lebih tebal, dan akan ada efek transisi selama 0.3 detik dengan fungsi timing ease-in.
+Kode di atas menghasilkan halaman web sederhana dengan latar belakang peach, sebuah gambar lingkaran dengan border putih di sebelah kanan, dan sebuah tombol biru muda dengan teks "klik saya" di sebelah kiri. Teks "Selamat Datang" dan "di web Alya !" ditampilkan dalam paragraf dengan font besar dan warna abu-abu. Ketika mouse di atas tombol, tombol akan berubah menjadi biru muda lebih terang dan fontnya akan menjadi lebih tebal dengan efek transisi selama 0.3 detik.
 # Tantangan Flexbox
 ## Penjelasan 
-1. <!DOCTYPE html>: Ini adalah deklarasi tipe dokumen HTML yang menunjukkan bahwa dokumen ini adalah dokumen HTML5.
+1. `<!DOCTYPE html>`: Ini adalah deklarasi tipe dokumen HTML yang menunjukkan bahwa dokumen ini adalah dokumen HTML5.
 2. `<html lang="en">`: Ini adalah elemen root (akar) dari dokumen HTML. lang="en" menunjukkan bahwa bahasa yang digunakan dalam dokumen adalah bahasa Inggris.
 3. `<head>: Elemen <head>` digunakan untuk menyediakan informasi tentang dokumen, seperti judul (title) dan referensi ke file eksternal seperti stylesheet (CSS).
 4. `<title>: Elemen <title>` digunakan untuk menentukan judul dokumen yang akan ditampilkan di bilah judul browser.
@@ -1149,7 +1177,7 @@ body {
     width: 100%;
 }
 .container {
-    display: contents;
+    display: flex;
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-around;
@@ -1183,43 +1211,82 @@ button:hover {
     background-color: lightcyan;
     font-weight: bolder;
 }
-tolong berikan kesimpulannya
 ```
 ## Hasil
 ![gambar](Aset/flex-box.png)
 
 ## Kesimpulan
-- Terdapat sebuah `<div>` dengan kelas "container" yang berperan sebagai wadah utama.
-- Di dalam `<div>` tersebut terdapat dua elemen lainnya.
-- Elemen pertama adalah sebuah gambar yang ditampilkan menggunakan tag `<img>` dengan kelas "box-1".
-- Elemen kedua adalah sebuah teks yang ditampilkan menggunakan tag `<p>` dengan kelas "box-2".
-- Ada pula sebuah tombol yang ditampilkan menggunakan tag `<button>` di luar div "container".
-- Body memiliki latar belakang berwarna "bisque" dan lebar 100% dari viewport.
-- Elemen dengan kelas "container" menggunakan properti `display: contents;` untuk mengubah perilaku tata letak dan mengabaikan elemen wadah tersebut dalam tata letak.
-- Properti `align-items: flex-end;` mengatur elemen di dalam div "container" agar ditampilkan di bagian bawah.
-- Properti `flex-direction: row;` mengatur tata letak elemen di dalam div "container" menjadi horizontal.
-- Properti `justify-content: space-around;` mengatur ruang antara elemen di dalam div "container".
-- Kelas "box-2" memiliki properti untuk mengatur ukuran font, margin, dan warna teks.
-- Kelas "box-1" memiliki properti untuk mengatur margin, border, dan border radius sehingga menghasilkan bentuk lingkaran.
-- Tombol memiliki properti tampilan yang kustom, seperti latar belakang, ukuran, warna teks, dan efek hover.
+Kode di atas menghasilkan halaman web sederhana dengan latar belakang bisque, sebuah gambar lingkaran dengan border putih di sebelah kanan, dan sebuah tombol biru muda dengan teks "klik saya" di sebelah kiri. Teks "Selamat Datang" dan "di web Alya !" ditampilkan dalam paragraf dengan font besar dan warna abu-abu. Ketika mouse di atas tombol, tombol akan berubah menjadi biru muda lebih terang dan fontnya akan menjadi lebih tebal.
 
 # Tantangan Position
 ## Penjelasan
-- position: static;: Kontainer tersebut memiliki posisi statis.
-- display: flex;: Anak-anak dari kontainer akan diatur dalam satu baris, berdasarkan sumbu utama yang secara default akan menjadi horizontal.
-- flex-direction: column;: Anak-anak dari kontainer akan diatur dalam satu kolom.
-- width: 100%;: Kontainer akan mengisi lebar penuh dari elemen induknya.
-- height: 580px;: Tinggi kontainer ditetapkan pada 580 piksel.
-- background-color: rgba(122, 122, 247, 0.628);: Warna latar belakang kontainer diatur sebagai nilai RGBA.
-- width: 250px;: Lebar box ditetapkan pada 250 piksel.
-- height: 350px;: Tinggi box ditetapkan pada 350 piksel.
-- background-color: white;: Warna latar belakang box diatur sebagai putih.
-- align-items: center;: Anak-anak dari box akan dipusatkan secara horizontal.
-- align-content: center;: Konten di dalam box akan dipusatkan secara vertikal.
-- border-radius: 10px;: Sudut box akan dibulatkan sebesar 10 piksel.
- - align-self: center;: Box akan dipusatkan di dalam kontainer secara horizontal.
-- margin-top: 150px;: Jarak antara bagian atas kontainer dan bagian atas box ditetapkan pada 150 piksel.
-- margin-bottom: 200px;: Jarak antara bagian bawah kontainer dan bagian bawah box ditetapkan pada 200 piksel.
+ **1. `.container`**
+- **`position: relative;`**: Mengatur posisi elemen "container" menjadi relatif. Ini berarti posisi elemen ini akan dihitung berdasarkan posisi normalnya di halaman.
+- **`display: flex;`**: Mengatur elemen "container" menjadi container Flexbox. Ini memungkinkan untuk mengatur penempatan item-item di dalam elemen "container" dengan lebih mudah.
+- **`flex-direction: column;`**: Mengatur agar item-item di dalam elemen "container" disusun secara vertikal (ke bawah).
+- **`width: 100%;`**: Mengatur lebar elemen "container" menjadi 100% dari lebar jendela browser.
+- **`height: 100%;`**: Mengatur tinggi elemen "container" menjadi 100% dari tinggi jendela browser.
+- **`background-color: skyblue;`**: Mengatur warna latar belakang elemen "container" menjadi biru langit.
+
+**2. `.box`**
+- **`width: 250px;`**: Mengatur lebar elemen "box" menjadi 250px.
+- **`height: 400px;`**: Mengatur tinggi elemen "box" menjadi 400px.
+- **`background-color: white;`**: Mengatur warna latar belakang elemen "box" menjadi putih.
+- **`align-items: center;`**: Mengatur agar item-item di dalam elemen "box" diposisikan di tengah secara horizontal.
+- **`align-content: center;`**: Mengatur agar item-item di dalam elemen "box" diposisikan di tengah secara vertikal.
+- **`border-radius: 10px;`**: Mengatur bentuk border menjadi bulat dengan radius 10px.
+- **`align-self: center;`**: Mengatur agar elemen "box" diposisikan di tengah secara horizontal di dalam container Flexbox.
+- **`margin-top: 150px;`**: Mengatur margin atas menjadi 150px.
+- **`margin-bottom: 150px;`**: Mengatur margin bawah menjadi 150px.
+
+**3. `.item`**
+- **`width: 100%;`**: Mengatur lebar elemen "item" menjadi 100%.
+- **`color: black;`**: Mengatur warna font elemen "item" menjadi hitam.
+
+**4. `.icon`**
+- **`background-color: skyblue;`**: Mengatur warna latar belakang elemen "icon" menjadi biru langit.
+- **`position: relative;`**: Mengatur posisi elemen "icon" menjadi relatif. Ini berarti posisi elemen ini akan dihitung berdasarkan posisi normalnya di halaman.
+- **`margin-left: 200px;`**: Mengatur margin kiri menjadi 200px.
+- **`bottom: 35px;`**: Mengatur margin bawah menjadi 35px.
+- **`width: 30px;`**: Mengatur lebar elemen "icon" menjadi 30px.
+- **`height: 30px;`**: Mengatur tinggi elemen "icon" menjadi 30px.
+- **`border-radius: 1500px;`**: Mengatur bentuk border menjadi bulat dengan radius 1500px.
+
+**5. `.box-1`**
+- **`height: 225px;`**: Mengatur tinggi elemen "box-1" menjadi 225px.
+- **`width: 100%;`**: Mengatur lebar elemen "box-1" menjadi 100%.
+- **`border-radius: 10px 10px 0px 0px;`**: Mengatur bentuk border menjadi bulat di bagian atas saja.
+
+**6. `.box-2`**
+- **`font-size: 10px;`**: Mengatur ukuran font menjadi 10px.
+- **`margin-left: 20px;`**: Mengatur margin kiri menjadi 20px.
+- **`margin-top: -30px;`**: Mengatur margin atas menjadi -30px. Ini akan membuat elemen "box-2" sedikit tumpang tindih dengan elemen di atasnya.
+- **`font-family: Arial, Helvetica, sans-serif;`**: Mengatur jenis font menjadi Arial, Helvetica, sans-serif.
+
+**7. `.box-3`**
+- **`font-size: 18px;`**: Mengatur ukuran font menjadi 18px.
+- **`margin-left: 20px;`**: Mengatur margin kiri menjadi 20px.
+- **`padding-top: 10px;`**: Mengatur padding atas menjadi 10px.
+- **`font-family: Arial, Helvetica, sans-serif;`**: Mengatur jenis font menjadi Arial, Helvetica, sans-serif.
+
+**8. `.box-4`**
+- **`font-size: 11px;`**: Mengatur ukuran font menjadi 11px.
+- **`font-family: Arial, Helvetica, sans-serif;`**: Mengatur jenis font menjadi Arial, Helvetica, sans-serif.
+- **`margin-left: 20px;`**: Mengatur margin kiri menjadi 20px.
+
+**9. `.box-5`**
+- **`background-color: rgb(193, 193, 193);`**: Mengatur warna latar belakang menjadi abu-abu muda.
+- **`padding-left: 20px;`**: Mengatur padding kiri menjadi 20px.
+- **`padding-bottom: 10px;`**: Mengatur padding bawah menjadi 10px.
+- **`padding-top: 10px;`**: Mengatur padding atas menjadi 10px.
+- **`margin-bottom: 100px ;`**: Mengatur margin bawah menjadi 100px.
+- **`font-family: Arial, Helvetica, sans-serif;`**: Mengatur jenis font menjadi Arial, Helvetica, sans-serif.
+- **`border-radius: 0px 0px 10px 10px;`**: Mengatur bentuk border menjadi bulat di bagian bawah saja.
+- **`font-size: small;`**: Mengatur ukuran font menjadi "small".
+
+**10. `.item-1`**
+- **`width: 10px;`**: Mengatur lebar elemen "item-1" menjadi 10px.
+- **`padding-left: 130px;`**: Mengatur padding kiri menjadi 130px.
 ## Kode Program
 ```html
 <!DOCTYPE html>
@@ -1244,52 +1311,67 @@ tolong berikan kesimpulannya
 ```
 ```css
 .container {
-    position: static;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 580px;
+    height: 100%;
     background-color: skyblue;
 }
+
 .box {
     width: 250px;
-    height: 350px;
+    height: 400px;
     background-color: white;
     align-items: center;
     align-content: center;
     border-radius: 10px;
     align-self: center;
     margin-top: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
+
 .item {
     width: 100%;
     color: black;
 }
+ 
+.icon {
+    background-color: skyblue;
+    position: relative;
+    margin-left: 200px;
+    bottom: 35px;
+    width: 30px;
+    height: 30px;
+    border-radius: 1500px;
+ }
+
 .box-1 {
     height: 225px;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
+
 .box-2 {
     font-size: 10px;
     margin-left: 20px;
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-top: -30px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .box-3 {
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 10px;
     padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .box-4 {
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
 }
+
 .box-5 {
     background-color: rgb(193, 193, 193);
     padding-left: 20px;
@@ -1300,31 +1382,16 @@ tolong berikan kesimpulannya
     border-radius: 0px 0px 10px 10px;
     font-size: small;
 }
+
 .item-1 {
     width: 10px;
     padding-left: 130px;
-}
-.icon {
-   background-color: skyblue;
-   position: relative;
-   left: 200px;
-   bottom: 35px;
-   width: 30px;
-   height: 30px;
-   border-radius: 1500px;
 }
 ```
 ## Hasil
 ![gambar](Aset/position.png)
 ## Kesimpulan
-- Kontainer tersebut memiliki posisi statis dan akan mengisi lebar penuh dari elemen induknya.
-- Tinggi kontainer ditetapkan pada 580 piksel, dengan latar belakang berwarna RGBA (122, 122, 247, 0.628).
-- Anak-anak dari kontainer akan diatur dalam satu kolom, sehingga properti flex-direction: column; diterapkan.
--  Lebar box ditetapkan pada 250 piksel dan tinggi pada 350 piksel, dengan latar belakang berwarna putih.
-- Isi dari box akan dipusatkan secara horizontal dan vertikal dengan properti align-items: center; dan align-content: center;.
-- Sudut box dibulatkan sebesar 10 piksel dan box itu sendiri akan dipusatkan di dalam kontainer secara horizontal dengan menggunakan align-self: center;.
-- Terdapat juga penyesuaian margin, di mana jarak antara bagian atas kontainer dan bagian atas box ditetapkan pada 150 piksel, dan jarak antara bagian bawah kontainer dan bagian bawah box ditetapkan pada 200 piksel.
-
+Kode di atas menampilkan sebuah halaman web sederhana dengan konten yang berisi gambar, teks, dan tombol "Read more". Kode CSS mengatur tampilan elemen-elemen tersebut dengan pengaturan margin, padding, warna, ukuran font, dan bentuk. Elemen `container` dan `box` menggunakan `Position` untuk mengatur penempatan item-item di dalamnya.
 # Pengenalan Bootstrap
 ## Apa Itu Bootstrap?
 Bootstrap adalah salah satu dari banyak framework front-end yang ada di web development. Framework-front end menyediakan serangkaian alat dan gaya bawaan untuk mempercepat proses pengembangan web dengan menyediakan komponen-komponen UI siap pakai dan sistem grid yang responsif. Bootstrap khususnya, terkenal dengan kemampuannya dalam menciptakan tata letak yang responsif dan komponen-komponen UI yang seragam.
